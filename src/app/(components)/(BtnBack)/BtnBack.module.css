@@ -1,0 +1,55 @@
+.back_button {
+  display: flex;
+  align-items: center;
+  width: 170px;
+  min-width: 170px;
+  gap: 10px;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #0e0612 0%, #131b2b 100%);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(69, 69, 69, 0.5), 0 0 5px rgba(0, 106, 255, 0.3) inset;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.back_button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 157, 255, 0.6);
+  background: linear-gradient(135deg, #003b8b, #10233c);
+}
+
+.back_button:active {
+  transform: scale(0.97);
+}
+
+.back_icon {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1); /* makes image white for dark bg */
+}
+
+@media (max-width: 768px) {
+
+  .back_button {
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    min-width: 0;
+  }
+
+  .back_icon {
+    width: 15px;
+    height: 15px;
+    filter: brightness(0) invert(1); /* makes image white for dark bg */
+  }
+
+  .btntext{
+    visibility: hidden;
+  }
+}
